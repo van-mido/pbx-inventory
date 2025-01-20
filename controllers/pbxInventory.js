@@ -1,4 +1,3 @@
-const { get } = require('mongoose');
 const PbxProcInv = require('../models/PbxInventory');
 
 // Method GET
