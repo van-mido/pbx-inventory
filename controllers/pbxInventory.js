@@ -7,7 +7,6 @@ const getAllInventory = async (req, res) => {
    try {
 
         const getProducts = await PbxProcInv.find();
-        res.status(200).json(getProducts);
 
         if (!getProducts) {
 
@@ -15,6 +14,7 @@ const getAllInventory = async (req, res) => {
         }
 
         res.status(200).json(getProducts);
+
    } catch (error) {
    
         res.status(400).json({ error: error.message });
